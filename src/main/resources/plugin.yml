@@ -1,5 +1,6 @@
-main: com.github.monulo.sampleplugin.SamplePlugin
+name: PluginDiary
 version: 1.0
-name: Tap-Sample-Plugin
-api-version: 1.16
-depend: [Kotlin, ProtocolLib]
+main: com.github.xenon.diary.plugin.DiaryPlugin
+commands:
+  game:
+    permission: op

@@ -1,0 +1,56 @@
+RED:
+  world: world
+  x: 36.5
+  y: 18
+  z: 61
+  yaw: 180
+  pitch: 0
+YELLOW:
+  world: world
+  x: -13.5
+  y: 18
+  z: 61.5
+  yaw: 180
+  pitch: 0
+BLUE:
+  world: world
+  x: 36.4
+  y: 18
+  z: 11.6
+  yaw: 0
+  pitch: 0
+GREEN:
+  world: world
+  x: -13.5
+  y: 18
+  z: 11.5
+  yaw: 0
+  pitch: 0
+REDCOW:
+  world: world
+  x: 26
+  y: 4
+  z: 51
+  yaw: 180
+  pitch: 0
+BLUECOW:
+  world: world
+  x: 26
+  y: 4
+  z: 21
+  yaw: 0
+  pitch: 0
+GREENCOW:
+  world: world
+  x: -4
+  y: 4
+  z: 21
+  yaw: 0
+  pitch: 0
+YELLOWCOW:
+  world: world
+  x: -4
+  y: 4
+  z: 51
+  yaw: 180
+  pitch: 0

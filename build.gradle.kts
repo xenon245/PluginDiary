@@ -3,21 +3,21 @@ plugins {
     id("com.github.johnrengelman.shadow") version "5.2.0"
 }
 
-group = "com.github.monulo"
+group = "com.github.xenon"
 version = "1.0-SNAPSHOT"
 
 repositories {
     mavenCentral()
     mavenLocal()
     maven("https://jitpack.io/")
-    maven("https://papermc.io/repo/repository/maven-public")
 }
 
 dependencies {
     compileOnly(kotlin("stdlib"))
-    compileOnly("com.destroystokyo.paper:paper-api:1.16.5-R0.1-SNAPSHOT")
-    implementation("com.github.monun:tap:3.4.0")
-    implementation("com.github.monun:kommand:0.7.+")
+    compileOnly("org.spigotmc:spigot-api:1.12.2-R0.1-SNAPSHOT")
+    compileOnly("com.github.noonmaru:tap:1.0")
+    compileOnly("com.github.noonmaru:custom-entity-bukkit:1.0")
+    implementation("com.github.noonmaru:invfx:1.3.1")
 }
 tasks {
     create<Copy>("copyToServer") {
@@ -25,5 +25,8 @@ tasks {
         var dest = File(rootDir, ".server/plugins")
         if(File(rootDir, shadowJar.get().archiveFileName.get()).exists()) dest = File(dest, "update")
         into(dest)
+    }
+    compileKotlin {
+        kotlinOptions.jvmTarget = "1.8"
     }
 }

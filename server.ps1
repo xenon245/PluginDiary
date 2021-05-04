@@ -11,13 +11,11 @@ $Debug = $true
 $ServerJar = "paper.jar"
 
 # Server
-$Version = "1.16.5"
+$Version = "1.12.2"
 
 # Plugins
 $Plugins = @(
-"https://github.com/monun/kotlin-plugin/releases/latest/download/Kotlin-1.4.31.jar",
-"https://ci.dmulloy2.net/job/ProtocolLib/lastSuccessfulBuild/artifact/target/ProtocolLib.jar",
-"https://media.forgecdn.net/files/3172/946/worldedit-bukkit-7.2.2-dist.jar"
+"https://github.com/monun/kotlin-plugin/releases/latest/download/Kotlin-1.4.31.jar"
 )
 
 # Backup (7z)
@@ -206,7 +204,6 @@ if ($Debug)
 
 [void]$JVMArgs.Add("-jar")
 [void]$JVMArgs.Add($ServerJar)
-[void]$JVMArgs.Add("--nogui")
 
 # Run
 While ($true)
